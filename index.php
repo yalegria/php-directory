@@ -1,5 +1,5 @@
 <?php
-$dir = "SSW/*";
+$dir = "../ssw/*";
 ?>
 <html>
 <head>
@@ -18,7 +18,7 @@ $dir = "SSW/*";
                 $indexfile = glob("{$ff}/index*");
                 ?>
                 <tr>
-                    <td><?php echo "{$ff} \n"; ?></td>
+                    <td><?php echo basename($ff);  " \n"; ?></td>
                     <td>
                         <?php if ($indexfile) { ?>
                         <a href="<?php echo $indexfile[0]; ?>" target="_blank">View</a>
